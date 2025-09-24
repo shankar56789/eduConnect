@@ -9,6 +9,11 @@ import com.wecp.progressive.service.CourseService;
 
 public class CourseServiceImplJdbc implements CourseService {
     private CourseDAO courseDAO;
+    
+
+    public CourseServiceImplJdbc(CourseDAO courseDAO) {
+        this.courseDAO = courseDAO;
+    }
 
     @Override
     public Integer addCourse(Course course) {

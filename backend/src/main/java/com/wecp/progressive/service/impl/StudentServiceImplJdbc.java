@@ -9,6 +9,11 @@ import com.wecp.progressive.service.StudentService;
 
 public class StudentServiceImplJdbc implements StudentService {
     private StudentDAO studentDAO;
+    
+
+    public StudentServiceImplJdbc(StudentDAO studentDAO) {
+        this.studentDAO = studentDAO;
+    }
 
     @Override
     public Integer addStudent(Student student) {
