@@ -1,0 +1,21 @@
+<form [formGroup]="courseForm" (ngSubmit)="onSubmit()" calss="form-container">
+
+        <label>Course Name:</label>
+        <input type="text"  formControlName="courseName"/>
+        <div *ngIf="submitted && courseForm.controls.courseName.invalid">
+            Course Name is required.
+        </div>
+        <label>Description:</label>
+        <textarea formControlName="description"></textarea>
+        <div *ngIf="submitted && courseForm.controls.description.invalid"> Max 500 characters allowd. 
+        </div>
+        <label> Teacher ID:</label>
+        <input type="number" formControlName="teacherId"/>
+        <div *ngIf="submitted && courseForm.controls.teacherId.invalid">
+            Valid Teacher ID required.
+        </div>
+<button type="submit">Submit</button>
+<button type="button" (click)="resetForm()">Reset</button>
+<p *ngIf="successMessage" class="success-message">{{ successMessage  }}</p>
+<p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+</form>

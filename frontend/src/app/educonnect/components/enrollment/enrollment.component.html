@@ -1,0 +1,23 @@
+
+<form [formGroup]="enrollmentForm" (ngSubmit)="onSubmit()" calss="form-container">
+
+<label> Studnet ID:</label>
+<input type="studentId" formControlName="studentId"/>
+<div *ngIf="submitted && enrollmentForm.controls.studentId.invalid">
+    Valid Studnet ID required.
+</div>
+<label> Course ID:</label>
+<input type="number" formControlName="courseId"/>
+<div *ngIf="submitted && enrollmentForm.controls.courseId.invalid">
+    Valid course ID required.
+</div>
+<label> EnrollmentDate :</label>
+<input type="number" formControlName="enrollmentDate"/>
+<div *ngIf="submitted && enrollmentForm.controls.enrollmentDate.invalid">
+    Valid enrollmentDate required.
+</div>
+<button type="submit">Submit</button>
+<button type="button" (click)="resetForm()">Reset</button>
+<p *ngIf="successMessage" class="success-message">{{ successMessage  }}</p>
+<p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+</form>

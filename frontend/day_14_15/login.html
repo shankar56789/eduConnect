@@ -1,0 +1,28 @@
+<!-- Create login form Username and Password fields in login form
+    where input fields has following cofigurations:
+     - username will have  loginUsername id 
+     - password field will have loginPassword id
+
+    validate: 
+    -loginUsername: should not be empty
+    -loginPassword: should not be empty
+
+-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form id="login_form">
+        <label for ="registerUsername"> username</label>  <br> <br> 
+    <input type="text" id="loginUsername" placeholder="Enter your UserName">
+    <label for ="registerPassword"> password </label>   <br> <br> 
+    <input type="password" id="loginPassword" placeholder="Enter your password">
+    <button onclick="register()">submit</button>
+</form>
+    </body>
+    <p id="message"></p>
+    </html>
