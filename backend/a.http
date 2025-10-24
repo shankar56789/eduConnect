@@ -1,0 +1,208 @@
+
+
+
+GET http://localhost:5000/teacher/
+//Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MiwiaWF0IjoxNzYwODcxNzk1LCJleHAiOjE3NjA5NTgxOTV9.RN2_cUn70DluTSa4vrgnlhPcpLjVStftRxgJSGA4R2DmG20bRnC8TsoXh8hyvQJFMVW34VOTaIcSRduEeNim2Q
+Content-Type: application/json
+
+###
+
+# POST http://localhost:5000/user/login
+# Content-Type: application/json
+
+# {
+#     "username": "Athaulla",
+#     "password": "583Karurqx"
+# }
+
+//Teacher 1 register
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "username": "Teaacher1",
+    "password": "Teacher@123",
+    "role": "Teacher",
+    "fullName": "Athaulla GM",
+    "contactNumber": "9765467890",
+    "email": "athaulla@gmail.com",
+    "address": "Chennai",
+    "dateOfBirth": "1985-06-15",
+    "subject": "Java",
+    "yearsOfExperience": 16
+}
+###
+
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "username": "Teaacher2",
+    "password": "Teacher@333",
+    "role": "Teacher",
+    "fullName": "Athaulla GM",
+    "contactNumber": "9765467890",
+    "email": "a@gmail.com",
+    "address": "Chennai",
+    "dateOfBirth": "1985-06-15",
+    "subject": "Java",
+    "yearsOfExperience": 2
+
+}
+
+
+####
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "username": "Teaacher1",
+    "password": "Teacher@123"
+}
+
+###
+
+
+GET http://localhost:5000/teacher/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6NSwiaWF0IjoxNzYxMTUwODk0LCJleHAiOjE3NjE2NTE1NDh9.IGyf3nmTFPPn3NJJpwfQRHXq1j0OTI7_4WnZCnoOfBxF5Q22_HuI1pMIveWbXbaBnVgZlDJb00PoCO4hC459SQ
+Content-Type: application/json
+####
+GET http://localhost:5000/teacher/yearsOfExperience
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6NSwiaWF0IjoxNzYxMTUwODk0LCJleHAiOjE3NjE2NTE1NDh9.IGyf3nmTFPPn3NJJpwfQRHXq1j0OTI7_4WnZCnoOfBxF5Q22_HuI1pMIveWbXbaBnVgZlDJb00PoCO4hC459SQ
+
+####
+GET http://localhost:5000/teacher
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MSwiaWF0IjoxNzYxMTQ5Mzc2LCJleHAiOjE3NjE2NTAwMzF9.wQxcnO0Om6YTe8naBCdNFNl7BCRjdMyjuAoTYaeubFfeV_Hk3Y9qFFbSYsS5dy6dB2VQ1AU5tbpH2KX6V2bp8w
+Content-Type: application/json
+####
+GET http://localhost:5000/teacher/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MSwiaWF0IjoxNzYxMTQ5Mzc2LCJleHAiOjE3NjE2NTAwMzF9.wQxcnO0Om6YTe8naBCdNFNl7BCRjdMyjuAoTYaeubFfeV_Hk3Y9qFFbSYsS5dy6dB2VQ1AU5tbpH2KX6V2bp8w
+Content-Type: application/json
+####
+DELETE  http://localhost:5000/teacher/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MSwiaWF0IjoxNzYxMTQ5Mzc2LCJleHAiOjE3NjE2NTAwMzF9.wQxcnO0Om6YTe8naBCdNFNl7BCRjdMyjuAoTYaeubFfeV_Hk3Y9qFFbSYsS5dy6dB2VQ1AU5tbpH2KX6V2bp8w
+
+
+
+###
+//Student register1
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+
+
+{
+    "username": "Chaitu",
+    "password": "Chaitu@123",
+    "role": "Student",
+    "fullName": "Chaitanya ",
+    "contactNumber": "9765467890",
+    "email": "Chaitanya@gmail.com",
+    "address": "Chennai",
+    "dateOfBirth": "1985-06-15",
+    "subject": "Java",
+    "yearsOfExperience": 16
+}
+
+
+###
+//student registr 2
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+
+
+{
+    "username": "Chai",
+    "password": "Chai@123",
+    "role": "Student",
+    "fullName": "Chai Kumar M",
+    "contactNumber": "9765467890",
+    "email": "chai@gmail.com",
+    "address": "Chennai",
+    "dateOfBirth": "1985-06-15",
+    "subject": "Java",
+    "yearsOfExperience": 16
+}
+###
+
+
+###
+GET http://localhost:5000/enrollment
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6NSwiaWF0IjoxNzYxMTUwODk0LCJleHAiOjE3NjE2NTE1NDh9.IGyf3nmTFPPn3NJJpwfQRHXq1j0OTI7_4WnZCnoOfBxF5Q22_HuI1pMIveWbXbaBnVgZlDJb00PoCO4hC459SQ
+
+###
+//Add course 1
+POST http://localhost:5000/course
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6NSwiaWF0IjoxNzYxMTUwODk0LCJleHAiOjE3NjE2NTE1NDh9.IGyf3nmTFPPn3NJJpwfQRHXq1j0OTI7_4WnZCnoOfBxF5Q22_HuI1pMIveWbXbaBnVgZlDJb00PoCO4hC459SQ
+Content-Type: application/json
+
+
+{
+    "courseName": "SQl",
+    "description": "Java 30 days",
+    "teacher" : {
+        "teacherId":2
+    }
+}
+
+###
+//Add course 2
+POST http://localhost:5000/course
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6NSwiaWF0IjoxNzYxMTUwODk0LCJleHAiOjE3NjE2NTE1NDh9.IGyf3nmTFPPn3NJJpwfQRHXq1j0OTI7_4WnZCnoOfBxF5Q22_HuI1pMIveWbXbaBnVgZlDJb00PoCO4hC459SQ
+Content-Type: application/json
+
+
+{
+    "courseName": "Python",
+    "description": "Python 20 days",
+    "teacher" : {
+        "teacherId":2
+    }
+}
+
+###
+//get courses
+GET  http://localhost:5000/course/teacher/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6NSwiaWF0IjoxNzYxMTUwODk0LCJleHAiOjE3NjE2NTE1NDh9.IGyf3nmTFPPn3NJJpwfQRHXq1j0OTI7_4WnZCnoOfBxF5Q22_HuI1pMIveWbXbaBnVgZlDJb00PoCO4hC459SQ
+
+###
+//Add enrollment1
+POST http://localhost:5000/enrollment
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6NSwiaWF0IjoxNzYxMTUwODk0LCJleHAiOjE3NjE2NTE1NDh9.IGyf3nmTFPPn3NJJpwfQRHXq1j0OTI7_4WnZCnoOfBxF5Q22_HuI1pMIveWbXbaBnVgZlDJb00PoCO4hC459SQ
+Content-Type: application/json
+
+{
+    "student":{
+        "studentId":1
+    },
+    "course":{
+        "courseId":1
+    },
+    "enrollmentDate":"2025-02-01"
+}
+
+###
+//Get all enrollments
+GET http://localhost:5000/enrollment
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6NSwiaWF0IjoxNzYxMTUwODk0LCJleHAiOjE3NjE2NTE1NDh9.IGyf3nmTFPPn3NJJpwfQRHXq1j0OTI7_4WnZCnoOfBxF5Q22_HuI1pMIveWbXbaBnVgZlDJb00PoCO4hC459SQ
+Content-Type: application/json
+
+
+###
+//post course 3
+POST http://localhost:5000/course
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MSwiaWF0IjoxNzYxMTA2NTk1LCJleHAiOjE3NjExOTI5OTV9.VXB3h55icPtxyIAhNd8DdSTs5EHz9Qg5eh78tu4C0yH7ZIjegvGqhQ8rzriJB3zrYSY3iQ-fBLRS1X1lk8k8rA
+Content-Type: application/json
+
+
+{
+    "courseName": "R",
+    "description": "R 20 days",
+    "teacher" : {
+        "teacherId":1
+    }
+}
+
+
+
